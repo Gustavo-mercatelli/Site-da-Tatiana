@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatiana Lopes</title>
+    <style>
+        .container:hover {
+            backdrop-filter: blur(50px);
+        }
+
+        .container:hover .texto {
+            top: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Merriweather', serif;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url(imagens/OIG2.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            /* Para o posicionamento do botão */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            background-color: transparent;
+            backdrop-filter: blur(0px);
+            overflow: hidden;
+            transition: backdrop-filter 5s;
+            border-radius: 10px;
+        }
+
+        .texto {
+            color: #000000;
+            position: relative;
+            top: 700px;
+            transition: top 3s;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+        }
+
+        /* Estilo para o botão fixo */
+        .fixed-button {
+            position: fixed;
+            bottom: 20px;
+            /* Distância do fundo */
+            right: 10px;
+            /* Distância da direita */
+            background-color: transparent;
+            /* Cor do botão */
+            color: white;
+            /* Cor do texto */
+            border: none;
+            /* Sem borda */
+            padding: 10px 15px;
+            /* Espessura do botão */
+            border-radius: 5px;
+            /* Bordas arredondadas */
+            cursor: pointer;
+            /* Muda o cursor ao passar o mouse */
+            font-size: 16px;
+            /* Tamanho da fonte */
+            z-index: 1000;
+            /* Garante que o botão fique acima de outros elementos */
+            overflow: hidden;
+            transition: backdrop-filter 1s;
+            top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="texto">
+            <h1>Oi amor</h1> <br>
+            <p>Há tantas maneiras de te dizer o quanto te amo,
+                tantas maneiras de você perceber o quanto é importante para mim.
+                E também tantas formas de entender que o amor pode ser demonstrado de inúmeras maneiras.
+                Hoje trago uma dessas formas, só para expressar um pouquinho aqui, só eu e você.
+                Esse texto não tem validade, você pode lê-lo quantas vezes quiser, onde quiser e quando quiser. Porque,
+                não importa o tempo que passe, ele sempre será significativo e constante.</p> <br>
+               <p> Primeiro, quero agradecer por compartilhar sua vida comigo: por sua companhia, paciência, tempo,
+                experiências, carinho, gentileza, cuidado, respeito, risadas, por tantas coisas... E olha que nem faz
+                tanto tempo, mas isso não importa. A intensidade não se mede pelos dias. O que realmente importa é
+                cuidar de quem amamos e oferecer aquilo que não há nada no mundo que compre: o Amor.</p> <br>
+               <P> Meu amor, quero que você aproveite cada sensação, que desfrute e viva intensamente tudo o que sente. Não
+                se prenda, não se segure. Faça o que tiver vontade, fale tudo que sente, compartilhe tudo comigo. Pode
+                confiar que estarei sempre aqui para te ouvir e te apoiar em tudo. Sempre estarei com você, seja nas
+                situações boas ou ruins. Quero te proteger e cuidar de você. Minha intenção é aproveitar cada segundo do
+                tempo que temos juntos nesta vida, e, se houver algo depois, quero estar com você lá também. Nunca me
+                cansarei de você, jamais enjoarei, e nunca te desrespeitarei.</P> <br>
+               <P> Eu sou feliz, muito feliz com você. Sempre ansiando pela sua presença e te esperando com um sorriso no
+                rosto. É maravilhoso te ver chegar, é maravilhoso te ver, e estar ao seu lado é simplesmente
+                excepcional. Tudo, tudo é tão bom com você. Amo cada detalhe seu, exatamente do jeitinho que você é.
+                Sério... cê não tem noção do quanto espero poder passar alguns minutos contigo e admirar esses teus olhos
+                bonitos e esse sorriso que me faz esquecer de tudo e so viver aquilo, aquele momento.
+                Sou apaixonado, louco e bobo por você, eu digo isso de boca cheia.</P> <br>
+                Tatiana Moreira Lopes,
+                Amo absurdamente você, amo o fato de amar você, e quero muito que seja minha esposa futuramente num
+                futuro tão próximo. <br>
+            <p>Com meu amor,</p> <br>
+            <p>Gustavo Torres 🤍</p>
+            </p>
+        </div>
+    </div>
+
+    <!-- Botão fixo -->
+    <button class="fixed-button" onclick="openLink()"></button>
+
+    <script>
+        // Função para abrir o link
+        function openLink() {
+            window.open("file:///C:/Users/Gustavo/Desktop/Pedido/Pedido/index.html", "_blank"); // Altere para o link desejado
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O precioso</title>
+    <style>
+        #conteudo {
+            padding: 10px;
+            top: 0;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background: #2b2628;
+            text-align: center;
+            left: 0;
+            font-family: sans-serif;
+        }
+
+        .btn {
+            border-radius: 10px;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 80px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        .btn-sim {
+            background: black;
+            margin-bottom: 20px;
+
+
+        }
+
+
+        .btn-nao {
+            background: black;
+        }
+
+        h2 {
+            font-family: emoji;
+            color: #63525f;
+            text-align: center;
+            border: 8px solid black;
+            padding: 5px;
+            display: inline-block;
+            border-block-color: revert;
+            color: #ffffff;
+        }
+
+        /* Estilos para o modal (janela de alerta) */
+        .modal {
+            display: none;
+            /* Escondido por padrão */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Fundo semitransparente */
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 0.5px solid #000000;
+            width: 300px;
+            text-align: center;
+        }
+
+        .close-btn {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Estilo para centralizar a imagem */
+        .imagem-centralizada {
+            display: block;
+            margin: 20px auto;
+            /* Margem superior/inferior e centralização horizontal */
+            width: 280px;
+            /* Ajuste a largura conforme necessário */
+            height: auto;
+            /* Mantém a proporção */
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body onload="mostrarAlerta()">
+    <div id="conteudo">
+        <h2> E o Cuzinho, vai liberar? 🤤</h2>
+        <img src="Imagem do WhatsApp de 2024-09-20 à(s) 12.44.56_356196c1.jpg" alt="Descrição da Imagem"
+            class="imagem-centralizada">
+        <button class="btn btn-sim" onclick="mostrarModal()">Sim</button>
+        <button class="btn btn-nao" onmouseover="Desvia(this)">Não</button>
+    </div>
+
+    <!-- Modal (alerta personalizado) -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Você aceitou por pra jogo, o Xibiu 😏</p>
+            <p>Clique em "Confirmar"</p>
+            <button class="close-btn" onclick="confirmar()">Confirmar</button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarAlerta() {
+            const userResponse = confirm('Se você clicar no "Não", vai ter o direito do meu e ainda ganhará 5000 reais no Pix. Agora, se clicar em "Sim", já sabe... clique em "Ok" para continuar');
+            if (userResponse) {
+                // O usuário clicou em "Sim", apenas continua carregando a página
+                return;
+            } else {
+                // O usuário clicou em "Não", redireciona ou toma uma ação
+                // Aqui você pode adicionar uma ação, se necessário
+                // Para redirecionar, use window.location.href = "url_da_pagina"; se desejado.
+            }
+        }
+
+        // Função para abrir o modal
+        function mostrarModal() {
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        // Função para confirmar e abrir o link
+        function confirmar() {
+            document.getElementById('myModal').style.display = 'none';
+            // Abre o link após confirmar
+            window.open("https://www.youtube.com/watch?v=87BDjYTTuTw", "_blank");
+        }
+
+        function Desvia(t) {
+            console.log("Opa, desviei...");
+            var btn = t;
+            btn.style.position = 'absolute';
+            btn.style.bottom = geraPosicao(10, 90);
+            btn.style.left = geraPosicao(10, 90);
+        }
+
+        function geraPosicao(min, max) {
+            return Math.random() * (max - min) + min + "%";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+#conteudo {
+    padding: 10px;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #b26c8b;
+    text-align: center;
+    left: 0;
+    font-family: sans-serif;
+}
+
+.btn {
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.btn-sim {
+    background: black;
+}
+
+.btn-nao {
+    background:black
+}
+
+h2 {
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+}
